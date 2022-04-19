@@ -13945,19 +13945,19 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <li><p>What are the strengths of the model; when does it perform well?</p>
 <ul>
 <li><span style="color:blue">Strengths:</span> <ol>
-<li><span style="color:blue">Training time is short</span>  </li>
+<li><span style="color:blue">Training  and prediction time is short</span>  </li>
 <li><span style="color:blue">Model is interpretable</span>  </li>
 <li><span style="color:blue">Works well with small datasets</span>  </li>
 </ol>
 </li>
-<li><span style="color:blue">It performs well when the data is normally distributed</span>    </li>
+<li><span style="color:blue">It performs well when the training set is normally distributed</span>    </li>
 </ul>
 </li>
 <li><p>What are the weaknesses of the model; when does it perform poorly?</p>
 <ul>
 <li><span style="color:blue">Weaknesses:</span> <ol>
-<li><span style="color:blue">Model doesn't work well with high dimensionality</span>  </li>
-<li><span style="color:blue">High bias when the dataset is very large</span>  </li>
+<li><span style="color:blue">It constructs linear boundaries because it assumes linearity between dependent and independent variables.</span>  </li>
+<li><span style="color:blue">High bias when the problem is non-linear</span>  </li>
 </ol>
 </li>
 <li><span style="color:blue">Performs poorly when the problem is non-linear</span>  </li>
@@ -13968,6 +13968,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </ol>
 </li>
 </ul>
+<p>Reference: <a href="https://www.geeksforgeeks.org/advantages-and-disadvantages-of-logistic-regression/">Advantages and Disadvantages of Logistic Regression</a></p>
 
 </div>
 </div>
@@ -13983,8 +13984,9 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <li><p>What are the strengths of the model; when does it perform well?</p>
 <ul>
 <li><span style="color:blue">Strengths:</span> <ol>
-<li><span style="color:blue">Low bias on a large high dimensional datasets</span>  </li>
 <li><span style="color:blue">Model is interpretable</span> </li>
+<li><span style="color:blue">Works well on non-linear datasets</span></li>
+<li><span style="color:blue">Lower risk of overfitting than e.g. Decision Trees</span>        </li>
 </ol>
 </li>
 <li><span style="color:blue">It performs well on high dimensional datasets</span>    </li>
@@ -13994,7 +13996,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <ul>
 <li><span style="color:blue">Weaknesses :</span><ol>
 <li><span style="color:blue">Training time can be long eps for tree based ensemble methods</span>  </li>
-<li><span style="color:blue">High chance of overfitting on small datasets</span>     </li>
+<li><span style="color:blue">High chance of overfitting on small datasets</span>   </li>
 </ol>
 </li>
 <li><span style="color:blue">It performs poorly on very small datasets due to overfitting</span>    </li>
@@ -14006,6 +14008,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </ol>
 </li>
 </ul>
+<p>Reference: <a href="https://towardsai.net/p/machine-learning/why-choose-random-forest-and-not-decision-trees">Why Choose Random Forest and Not Decision Trees</a></p>
 
 </div>
 </div>
@@ -14022,6 +14025,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <ul>
 <li><span style="color:blue">Strengths:</span>   <ol>
 <li><span style="color:blue">Low bias on a high dimensional datasets when using RBF Kernel</span>  </li>
+<li><span style="color:blue">Works well with data that has clear margin of separation./span&gt;  </li>
 </ol>
 </li>
 <li><span style="color:blue">It performs well on low dimensional datasets</span>    </li>
@@ -14030,11 +14034,11 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <li><p>What are the weaknesses of the model; when does it perform poorly?</p>
 <ul>
 <li><span style="color:blue">Weaknesses:</span> <ol>
-<li><span style="color:blue">Training time can be very long esp with the RBF and Polynomial Kernals</span>  </li>
+<li><span style="color:blue">Training time can be very long on large data-sets esp with the RBF and Polynomial Kernals</span>  </li>
 <li><span style="color:blue">Model is not interpretable. (Unless you use an external "explainer" library)</span>     </li>
 </ol>
 </li>
-<li><span style="color:blue">Training time is very long on highly dimensional datasets</span>    </li>
+<li><span style="color:blue">Training time is very long on high dimensional large datasets</span>    </li>
 </ul>
 </li>
 <li><p>What makes this model a good candidate for the problem, given what you know about the data?</p>
@@ -14043,6 +14047,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 </ol>
 </li>
 </ul>
+<p>Reference: <a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/">Understanding Support Vector Machine(SVM) algorithm from examples (along with code)</a></p>
 
 </div>
 </div>
